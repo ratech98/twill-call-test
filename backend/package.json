@@ -13,7 +13,7 @@
     "twilio": "^3.49.4"
   },
   "scripts": {
-    "start:dev": "nodemon server.js"
+    "start": "nodemon app.js"
   },
   "nodemonConfig": {
     "env": {
