@@ -49,7 +49,7 @@ class Twilio {
       },
       message
     );
-    twiml.redirect("https://fifty-terms-roll.loca.lt/enqueue");
+    twiml.redirect("https://twillio.onrender.com/enqueue");
     return twiml;
   }
 
@@ -68,7 +68,7 @@ class Twilio {
   answerCall(sid) {
     console.log("answerCall with sid", sid);
     this.client.calls(sid).update({
-      url: "https://fifty-terms-roll.loca.lt/connect-call",
+      url: "https://twillio.onrender.com/connect-call",
       method: "POST",
       function(err, call) {
         console.log("anwserCall", call);
